@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 const title='Cybernetic | London AI lab';
-const description='A London-based AI lab using AI to rapidly test ideas, develop useful technology and bring it to market. Explore our approach or build with us.';
+const description='Cybernetic is a London-based AI lab. We turn bold what-ifs into technology that changes how people work.';
 export const metadata: Metadata = {icons:{icon:'/favicon.svg'},metadataBase:new URL('https://cybernetic.london'),title:{default:title,template:'%s | Cybernetic'},description,openGraph:{title,description,type:'website',url:'https://cybernetic.london'},twitter:{card:'summary',title,description}};
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en-GB"><body><a className="skip" href="#main">Skip to content</a><header><a className="brand" href="/" aria-label="Cybernetic home"><span>cybernetic</span></a><nav aria-label="Main navigation"><a href="/#work">Work with us</a><a href="/#contact">Contact <span aria-hidden="true">↗</span></a></nav></header><main id="main">{children}</main><footer><a className="footer-brand" href="/">cybernetic</a><div><p>A London-based AI lab.</p><a href="/#contact">Start a conversation ↗</a></div><div className="footer-bottom"><span>© 2026 Cybernetic Limited</span><span>Ideas. Experiments. Useful technology.</span></div></footer></body></html>}
